@@ -1,0 +1,76 @@
+
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    color: blue;
+}
+
+a:visited {
+    color:yellow;
+}
+
+.link {
+    text-decoration: none;
+    color: yellow;
+}
+
+.link:hover {
+    
+    color: green;
+}
+
+.artikel h1 {
+    color: red;
+    background-color: black;
+    font-size: 20px;
+}
+
+.tulisan1 {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+}
+
+.tulisan2 {
+    color: red;
+    font-style: italic;
+    text-transform: capitalize;
+    text-decoration: overline;
+}
+
+.kotak {
+    border: 4px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.kotak1 {
+    border: 4px dashed black;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+.kotak2 {
+    border: 4px dotted black;
+    padding: 20px;
+    margin: 10px;
+}
+h1 {
+    text-align: center;
+}
+ul.transportasi {
+    list-style-type: square;
+}
+
+ul.lokasi {
+    list-style-type: circle;
+}
+
+ul.merk {
+    list-style-type: upper-roman;
+}
