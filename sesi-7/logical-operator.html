@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myAge = 20;
+      let myHeight = 170;
+      let car = false;
+      let truck = false;
+      let motorcycle = false;
+
+      if (myAge > 17 && myHeight > 150) {
+        if (car) {
+          console.log("Anda butuh SIM A");
+        } else if (truck) {
+          console.log("Anda butuh SIM B");
+        } else if (motorcycle) {
+          console.log("Anda butuh SIM C");
+        } else {
+          console.log("Jenis kendaraan tidak ada");
+        }
+      } else {
+        console.log("Anda belum memenuhi syarat");
+      }
+    </script>
+  </body>
+</html>
