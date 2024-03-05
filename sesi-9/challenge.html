@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encrypt Password</title>
+  </head>
+  <body>
+    <script>
+      function removeSpaces(text) {
+        return text.replace(" ", "").trim();
+      }
+
+      function reverseText(text) {
+        return text.split("").reverse().join("");
+      }
+
+      function updateVowels(text) {
+        //
+      }
+
+      function encryptPassword(text) {
+        let noSpace = removeSpaces(text);
+        let reversed = reverseText(noSpace);
+        let updateVowels = updateVowels(reversed);
+
+        return updateVowels;
+      }
+
+      console.log(encryptPassword("manchester united"));
+      console.log(encryptPassword("manchester city"));
+      console.log(encryptPassword("fc barcelona"));
+    </script>
+  </body>
+</html>

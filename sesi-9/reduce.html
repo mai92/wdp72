@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reduce</title>
+  </head>
+  <body>
+    <script>
+      "use strict";
+      let donations = [1000, 2000, 5000, 3000, 1500, 1000];
+      let total = 0;
+
+      for (let i = 0; i < donations.length; i++) {
+        total += donations[i];
+        //console.log(total);
+      }
+      console.log(total);
+      let totalReduce = donations.reduce(function (totalReduce, donation) {
+        return totalReduce + donation;
+      });
+      //0
+      //0+1000
+      //1000+2000
+      //3000+5000
+      //8000+3000
+
+      console.log(totalReduce);
+    </script>
+  </body>
+</html>

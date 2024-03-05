@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <script>
+      let harga = [19.6, 15, 11.3, 22.5];
+      let hargaBaru = [];
+
+      for (let i = 0; i < harga.length; i++) {
+        hargaBaru.push(harga[i] * 2);
+      }
+      console.log(hargaBaru);
+
+      let hargaSekarang = harga.map(function (hrg) {
+        return hrg * 2;
+      });
+
+      let hargaSekarangArrow = harga.map((hrg) => hrg * 2);
+      console.log(hargaSekarang);
+      console.log(hargaSekarangArrow);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+    <h1 id="name"></h1>
+  </head>
+  <body>
+    <script>
+      let person = {
+        name: "Komeng",
+        age: 34,
+        isMarried: true,
+        gender: "Male",
+        skills: ["Javascript", "Git", "HTML"],
+        hobbies: ["Writing", "Cooking"],
+        childs: [
+          {
+            name: "Jon",
+            age: 2,
+          },
+          {
+            name: "Tom",
+            age: 5,
+          },
+        ],
+      };
+
+      person.name = "Adul"; // Mengubah Nilai
+      person.address = "Jakarta"; // Menambahkan properti ke object
+      person.hobbies.push("Coding"); // Menambahkan Data Array di Dalam Object
+      person.childs.push({ name: "Martis", age: 0 }); // Menambahkan data object ke dalam array di dalam object
+      person.childs[2].gender = "Male"; // Menambahkan properti ke dalam object yang ada di dalam array object
+      person.childs[1].name = "Jerry";
+
+      document.getElementById("name").innerHTML = person.name;
+    </script>
+  </body>
+</html>
