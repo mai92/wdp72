@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1 tentukan angka yang lebih kecil
+      // 2 lakukan perulangan dari angka 1 sampai angka kecil
+      // 3 jika i / angka dalam perulangan bisa membagi habis number1 & number 2, berikan nilai pada variabel gcd
+      // 4 kembalikan nilainya
+      function gcd(number1, number2) {
+        let smaller, gcd;
+
+        if (number1 < number2) {
+          // mencari angka kecil dan besar
+          smaller = number1;
+        } else if (number1 > number2) {
+          smaller = number2;
+        }
+
+        for (let i = 1; i <= smaller; i++) {
+          if (number1 % i == 0 && number2 % i == 0) {
+            gcd = i;
+          }
+        }
+
+        return gcd;
+      }
+
+      console.log(gcd(12, 24));
+      // 12 = 1,2,3,4,6,12
+      // 24 = 1,2,4,6,8,12,24
+      console.log(gcd(50, 40));
+      console.log(gcd(22, 99));
+      console.log(gcd(24, 36));
+      console.log(gcd(17, 23));
+    </script>
+  </body>
+</html>

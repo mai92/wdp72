@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function checkAB(num) {
+        for (let i = 0; i < num.length; i++) {
+          if (num[i] === "a" && num[i + 4] === "b") {
+            return true;
+          } else if (num[i] === "b" && num[i + 4] === "a") {
+            return true;
+          }
+        }
+        return false;
+      }
+
+      console.log(checkAB("lane borrowed"));
+      console.log(checkAB("axxxb"));
+      console.log(checkAB("bxxxa"));
+      console.log(checkAB("i am sick"));
+    </script>
+  </body>
+</html>
